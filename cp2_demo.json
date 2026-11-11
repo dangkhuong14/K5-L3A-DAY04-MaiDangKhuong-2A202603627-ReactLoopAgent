@@ -1,0 +1,197 @@
+{
+  "status": "completed",
+  "answer": "GitHub Actions hiện đang hoạt động bình thường. Tuy nhiên, đã có một sự cố xảy ra vào ngày 5 tháng 11 năm 2026, được giải quyết sau đó. Bạn có thể xem chi tiết tại: https://stspg.io/lv4q3xm9r0rk",
+  "trace": [
+    {
+      "event": "model",
+      "step": 1,
+      "finish": "tool_calls",
+      "tool_calls": 1
+    },
+    {
+      "event": "tool",
+      "step": 1,
+      "name": "get_status",
+      "arguments": {
+        "provider": "github",
+        "component": "actions"
+      },
+      "result": {
+        "provider": "github",
+        "captured_at": "2026-11-09T03:50:47.065020+00:00",
+        "overall": {
+          "indicator": "none",
+          "description": "All Systems Operational"
+        },
+        "components": [
+          {
+            "name": "Actions",
+            "status": "operational"
+          }
+        ],
+        "incidents": [
+          {
+            "id": "pfbmpxxfq1cy",
+            "name": "Degraded performance for multiple GitHub services",
+            "status": "resolved",
+            "updated_at": "2026-11-06T00:20:49.369Z"
+          },
+          {
+            "id": "t89g2q1800fr",
+            "name": "Incident with Actions",
+            "status": "resolved",
+            "updated_at": "2026-11-05T17:42:35.455Z"
+          },
+          {
+            "id": "h02n9572mx9y",
+            "name": "Incident with Actions",
+            "status": "resolved",
+            "updated_at": "2026-11-07T01:10:18.506Z"
+          },
+          {
+            "id": "xr3myzj7ms51",
+            "name": "Incident with Actions and Pages",
+            "status": "resolved",
+            "updated_at": "2026-11-07T01:04:38.647Z"
+          },
+          {
+            "id": "smtdswd1h2w4",
+            "name": "Incident with Pull Requests, Git Operations and Issues",
+            "status": "resolved",
+            "updated_at": "2026-11-04T11:50:06.459Z"
+          }
+        ],
+        "matching_incidents_in_last_50": 23,
+        "note": "Chỉ tìm theo chuỗi trong 50 incident gần nhất; không tìm thấy không chứng minh không có sự cố.",
+        "source": "https://www.githubstatus.com"
+      }
+    },
+    {
+      "event": "model",
+      "step": 2,
+      "finish": "tool_calls",
+      "tool_calls": 1
+    },
+    {
+      "event": "tool",
+      "step": 2,
+      "name": "get_incident_details",
+      "arguments": {
+        "provider": "github",
+        "incident_id": "t89g2q1800fr"
+      },
+      "result": {
+        "ok": true,
+        "provider": "github",
+        "captured_at": "2026-11-09T03:50:47.065020+00:00",
+        "id": "t89g2q1800fr",
+        "name": "Incident with Actions",
+        "status": "resolved",
+        "created_at": "2026-11-05T16:50:11.086Z",
+        "updated_at": "2026-11-05T17:42:35.455Z",
+        "components": [
+          "Actions"
+        ],
+        "updates": [
+          {
+            "status": "resolved",
+            "created_at": "2026-11-05T17:42:35.425Z",
+            "body": "This incident has been resolved. Thank you for your patience and understanding as we addressed this issue. A detailed root cause analysis will be shared as soon as it is available.",
+            "truncated": false
+          },
+          {
+            "status": "monitoring",
+            "created_at": "2026-11-05T17:04:46.807Z",
+            "body": "The degradation affecting Actions has been mitigated. We are monitoring to ensure stability.",
+            "truncated": false
+          },
+          {
+            "status": "investigating",
+            "created_at": "2026-11-05T16:50:11.189Z",
+            "body": "We are investigating reports of degraded performance for Actions",
+            "truncated": false
+          }
+        ],
+        "updates_total": 4,
+        "url": "https://stspg.io/lv4q3xm9r0rk"
+      }
+    },
+    {
+      "event": "model",
+      "step": 3,
+      "finish": "stop",
+      "tool_calls": 0
+    }
+  ],
+  "usage": [
+    {
+      "prompt_tokens": 274,
+      "completion_tokens": 20,
+      "total_tokens": 294,
+      "cost": 3.54e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.54e-05,
+        "upstream_inference_prompt_cost": 2.74e-05,
+        "upstream_inference_completions_cost": 8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 753,
+      "completion_tokens": 34,
+      "total_tokens": 787,
+      "cost": 8.89e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.89e-05,
+        "upstream_inference_prompt_cost": 7.53e-05,
+        "upstream_inference_completions_cost": 1.36e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 1177,
+      "completion_tokens": 67,
+      "total_tokens": 1244,
+      "cost": 0.0001445,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001445,
+        "upstream_inference_prompt_cost": 0.0001177,
+        "upstream_inference_completions_cost": 2.68e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}
